@@ -1,5 +1,5 @@
 import xeni from '../images/xeni.jpg';
-// import rosa from '../images/rosa.png';
+import rosa from '../images/rosa.png';
 import asteroid from '../images/asteroid.png';
 import ceasonport from '../images/ceasonport.png';
 import cordle from '../images/cordle.png';
@@ -18,7 +18,7 @@ const Project = () => {
                 </div>
                 
                 <div className='project-tile cyber-tile-small'>
-                    {/* <img src={rosa} alt="Rosa Evo" /> */}
+                    <img src={rosa} alt="Rosa Evo" />
                     <h5 className='cyber-h' style={{ color: '#151412' }}>Rosa Evo</h5>
                     <label style={{ color: '#151412' }}>An Ecommerce Website for selling 'Resin based' Jewelry.</label>
                 </div>
