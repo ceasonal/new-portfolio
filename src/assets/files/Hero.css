@@ -1,0 +1,94 @@
+.hero-container {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #151412; /* Replace with your desired background color */
+}
+
+.hero-text {
+  color: #ECE9E2; /* Replace with your desired text color */
+  font-size: 8vw; /* Use viewport width for responsive font size */
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.blue-circle {
+  margin-top: 100px;
+  width: 40vw; /* Use viewport width for responsive circle size */
+  height: 40vw; /* Keep it a circle */
+  max-width: 500px; /* Set a maximum size */
+  max-height: 500px; /* Set a maximum size */
+  border-radius: 50%;
+  background-color: #42B7AE; /* Replace with your desired circle color */
+  position: absolute;
+  top: 35%; /* Centering based on circle size */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%; /* Adjust as needed */
+  max-width: 400px; /* Set a maximum size for the image */
+  height: auto; /* Maintain aspect ratio */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  clip-path: inset(0 0 6.5% 0); /* Crops 10% from the bottom */
+}
+
+/* Media Queries for Additional Responsiveness */
+
+@media (max-width: 1024px) { /* iPad Air and similar */
+  .hero-text {
+    font-size: 10vw; /* Responsive font size */
+  }
+
+  .blue-circle {
+    width: 100vw; /* Responsive circle size */
+    height: 100vw; 
+  }
+
+  .hero-image {
+    width: 50%; /* Larger image size */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 10vw; /* Adjust font size for smaller screens */
+  }
+  
+  .blue-circle {
+    width: 60vw; /* Larger circle for small screens */
+    height: 60vw; /* Maintain aspect ratio */
+  }
+  
+  .hero-image {
+    width: 60%; /* Image occupies more space on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    top: 40%;
+    font-size: 15vw; /* Further adjustment for very small screens */
+  }
+
+  .blue-circle {
+    width: 90vw; /* Even larger circle */
+    height: 90vw; /* Maintain aspect ratio */
+  }
+
+  .hero-image {
+    width: 60%; /* Image occupies even more space */
+  }
+}

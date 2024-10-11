@@ -1,0 +1,15 @@
+  .about-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    align-items: center; /* Align items vertically */
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+}
+
+.cyber-tile-big {
+    margin: 10px; /* Add some space between tiles */
+    margin-top: 50px;
+    padding: 20px; /* Add padding for aesthetics */
+    border-radius: 10px; /* Optional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}

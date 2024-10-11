@@ -1,0 +1,9 @@
+.work-container {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}

@@ -1,0 +1,64 @@
+.project-container {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Full width */
+    color: #ECE9E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center;
+    background-color: #151412;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed to 3 columns */
+    gap: 40px; /* Space between tiles */
+}
+
+.project-tile {
+    background: #ECE9E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    border-radius: 8px; /* Slight rounding for aesthetic */
+    padding: 8px; /* Optional padding */
+    width: 300px;
+    height: 230px;
+}
+
+.project-tile img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Adjust tile size on smaller screens */
+@media (max-width: 768px) {
+    .project-tile {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-tile {
+        padding: 8px; /* Further reduce padding on very small screens */
+        
+    }
+    .project-tile img {
+        max-width: 60%; /* Limit image size to 80% of the tile width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+.project-tile img {
+    max-width: 80%; /* Limit image size to 80% of the tile width */
+    height: auto; /* Maintain aspect ratio */
+}
