@@ -14,7 +14,7 @@ const Project = () => {
                 <div className='project-tile cyber-tile-small'>
                     <img src={xeni} alt="Xeni Bot" />
                     <h5 className='cyber-h' style={{ color: '#151412' }}>Xeni Bot</h5>
-                    <label style={{ color: '#151412' }}>A discord bot that serves a variety of purposes.</label>
+                    <label style={{ color: '#151412' }}>A discord bot that serves a variety of purposes..</label>
                 </div>
                 
                 <div className='project-tile cyber-tile-small'>
