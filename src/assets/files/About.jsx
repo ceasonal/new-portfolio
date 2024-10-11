@@ -1,4 +1,5 @@
 import React from "react";
+import hero3 from "../images/hero3.png"
 import "./About.css"; 
 
 const About = () => {
@@ -19,7 +20,7 @@ const About = () => {
         </p>
       </div>
       <div className="cyber-tile-big cyber-glitch-1" style={{ backgroundColor: "#42B7AE" }}>
-        <img src="../src/assets/images/hero3.png" alt="About"/>
+        <img src={hero3} alt="About"/>
       </div>
     </div>
   );
