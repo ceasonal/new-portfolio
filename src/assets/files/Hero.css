@@ -3,12 +3,12 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #151412; /* Replace with your desired background color */
+  background-color: #151412;
 }
 
 .hero-text {
-  color: #ECE9E2; /* Replace with your desired text color */
-  font-size: 8vw; /* Use viewport width for responsive font size */
+  color: #ece9e2;
+  font-size: 8vw;
   font-weight: bold;
   position: absolute;
   top: 30%;
@@ -19,14 +19,14 @@
 
 .blue-circle {
   margin-top: 100px;
-  width: 40vw; /* Use viewport width for responsive circle size */
-  height: 40vw; /* Keep it a circle */
-  max-width: 500px; /* Set a maximum size */
-  max-height: 500px; /* Set a maximum size */
+  width: 40vw;
+  height: 40vw;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 50%;
-  background-color: #42B7AE; /* Replace with your desired circle color */
+  background-color: #42b7ae;
   position: absolute;
-  top: 35%; /* Centering based on circle size */
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -36,24 +36,25 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 30%; /* Adjust as needed */
-  max-width: 400px; /* Set a maximum size for the image */
-  height: auto; /* Maintain aspect ratio */
+  width: 30%;
+  max-width: 400px;
+  height: auto;
   transform: translate(-50%, -50%);
   z-index: 2;
-  clip-path: inset(0 0 6.5% 0); /* Crops 10% from the bottom */
+  clip-path: inset(0 0 6.5% 0);
 }
 
 /* Media Queries for Additional Responsiveness */
 
-@media (max-width: 1024px) { /* iPad Air and similar */
+@media (max-width: 1024px) {
+  /* iPad Air and similar */
   .hero-text {
     font-size: 10vw; /* Responsive font size */
   }
 
   .blue-circle {
     width: 100vw; /* Responsive circle size */
-    height: 100vw; 
+    height: 100vw;
   }
 
   .hero-image {
@@ -61,17 +62,16 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .hero-text {
     font-size: 10vw; /* Adjust font size for smaller screens */
   }
-  
+
   .blue-circle {
     width: 60vw; /* Larger circle for small screens */
     height: 60vw; /* Maintain aspect ratio */
   }
-  
+
   .hero-image {
     width: 60%; /* Image occupies more space on smaller screens */
   }
